@@ -1,0 +1,72 @@
+.reserve {
+    &-item {
+        width: 70px;
+        text-align: center;
+        border: 1px solid transparent;
+        display: block;
+        padding-top: $spacer*0.5;
+        padding-bottom: $spacer*0.5;
+        font-size: $h5-font-size;
+    }
+
+    &-hover {
+        transition: all 0.5s;
+
+        &:hover {
+            background: $primary !important;
+            color: white !important;
+        }
+    }
+}
+
+.progressbBar {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $primary;
+        top: -12px;
+    }
+
+    &-point {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            border: 2px solid $primary;
+            background-color: $white;
+            transform: translateX(-50%);
+            top: -24px;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &.step-1::after {
+            content: '1';
+            vertical-align: middle;
+            color: $pre-color;
+        }
+
+        &.step-2::after {
+            content: '2';
+            color: $pre-color;
+        }
+
+        &.active {
+            &.progressbBar-point::after {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}

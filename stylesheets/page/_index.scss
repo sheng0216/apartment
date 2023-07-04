@@ -1,0 +1,66 @@
+.banner {
+    max-width: 100%;
+    height: 100vh;
+    background: url('./img/banner-sm.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media (min-width:768px) {
+        background: url('./img/banner.jpg');
+        background-position: left center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.reserve {
+    background: url('./img/bbq-1.jpg');
+    height: 344px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width:768px) {
+        height: 550px;
+    }
+}
+
+.icon {
+    width: 96px;
+    height: 96px;
+    margin: -48px auto 0;
+}
+
+.icon:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 6px solid $primary;
+    border-right: 6px solid $primary;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+.icon-space {
+    padding-top: 75px;
+}
+
+.rotate-hover:hover i {
+    animation: rotate 0.3s linear infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}

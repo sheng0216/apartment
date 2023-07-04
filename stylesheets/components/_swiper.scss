@@ -1,0 +1,15 @@
+.swiper-pagination-bullet {
+    background-color: $primary;
+
+    &-active {
+        width: $spacer;
+        border-radius: 8px;
+    }
+}
+
+.swiper {
+    .swiper-pagination {
+        position: unset;
+        bottom: $spacer;
+    }
+}

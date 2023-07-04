@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <title>意見表</title>
+</head>
+
+<body class="min-vh-100 position-relative">
+    <header class="mb-6 mb-md-7">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <h1 class="navbar-brand fw-bolder"><a href="index.html">契合</a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="package.html">包裹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comment.html">意見表</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserve.html">預定</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="firm.html">廠商</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="pb-7 pb-sm-6">
+        <div class="container pt-6">
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-7 progressbBar"></div>
+            </div>
+            <div class="row justify-content-between mb-3 mb-md-5">
+                <div class="col-2 col-sm-5">
+                    <div class="progressbBar-point text-center step-1">
+                        <p>預定</p>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-5">
+                    <div class="progressbBar-point text-center step-2 active">
+                        <p>完成</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-8">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h2 class="h2 fs-md-s mb-3">完成</h2>
+                            <p class="h5 mb-3">恭喜您預定烤肉區成功，使用完畢麻煩將設施歸位。</p>
+                            <a href="index.html" class="btn btn-primary">完成</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-primary py-1 py-md-3 text-center position-absolute w-100 bottom-0">
+        <div class="container">
+            <p class="text-white">Copyright © 2023 by match / 素材取自網路，僅作個人作品使用</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./stylesheets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

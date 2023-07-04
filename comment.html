@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <title>意見表</title>
+</head>
+
+<body>
+    <header class="mb-6 mb-md-7">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <h1 class="navbar-brand fw-bolder"><a href="index.html">契合</a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="package.html">包裹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comment.html">意見表</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reserve.html">預定</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="firm.html">廠商</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="modal fade" id="addcomment">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">你的回饋是社區進步的方向</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-0">
+                    <div class="container">
+                        <form class="js-form">
+                            <div class="mb-3">
+                                <label for="js-name" class="form-label">姓名</label>
+                                <input type="text" class="form-control" id="js-name">
+                                <span class="text-danger js-name">請輸入姓名</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="js-household" class="form-label">住戶</label>
+                                <select class="form-select js-floor" id="js-household">
+                                    <option selected>選擇樓層</option>
+                                    <option value="1">One</option>
+                                </select>
+                                <span class="text-danger js-household">請選擇樓層</span>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="js-content">反應事項</label>
+                                <textarea class="form-control" id="js-content" rows="6"></textarea>
+                                <span class="text-danger js-content">請輸入事項</span>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary js-btn">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="comment mb-6 mb-md-7">
+        <section class="container mb-6 mb-md-7">
+            <div class="row align-items-center mb-3">
+                <div class="col-sm-6">
+                    <h2 class="h1 fs-md-l text-center text-sm-start mb-2 mb-sm-0">住戶意見表</h2>
+                </div>
+                <div class="col-sm-6">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="btn btn-primary py-2 w-100" data-bs-toggle="modal"
+                            data-bs-target="#addcomment">
+                            填寫意見
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-unstyled row flex-column align-items-end gap-row-1 timeLine commentList">
+                <li class="col-10 col-md-5 me-md-auto timeLine-item">
+                    <div class="p-4 border border-3">
+                        <time class="mb-2 d-block">2023-04-05</time>
+                        <div class="d-flex align-items-start ">
+                            <p class="me-3">健身房使用完畢的人，窗戶時常忘記關閉是否可以請警衛大哥幫忙巡視，或是貼張公告</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#commentbtn1">
+                                <span class="material-icons">
+                                    expand_more
+                                </span>
+                            </button>
+                        </div>
+                        <div class="border-top pt-2 mt-2 collapse" id="commentbtn1">
+                            <p>
+                                Some placeholder content for the collapse component. This panel is hidden by
+                                default but
+                                revealed when the user activates the relevant trigger.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-10 col-md-5 timeLine-item">
+                    <div class="p-4 border border-3">
+                        <time class="mb-2 d-block">2023-04-05</time>
+                        <div class="d-flex align-items-start">
+                            <p class="me-3">健身房使用完畢的人，窗戶時常忘記關閉是否可以請警衛大哥幫忙巡視，或是貼張公告</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1">
+                                <span class="material-icons">
+                                    expand_more
+                                </span>
+                            </button>
+                        </div>
+                        <div class="border-top pt-2 mt-2 collapse" id="collapseExample1">
+                            <p>
+                                Some placeholder content for the collapse component. This panel is hidden by
+                                default but
+                                revealed when the user activates the relevant trigger.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-10 col-md-5 me-md-auto timeLine-item">
+                    <div class="p-4 border border-3">
+                        <time class="mb-2 d-block">2023-04-05</time>
+                        <div class="d-flex align-items-start">
+                            <p class="me-3">健身房使用完畢的人，窗戶時常忘記關閉是否可以請警衛大哥幫忙巡視，或是貼張公告</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2">
+                                <span class="material-icons">
+                                    expand_more
+                                </span>
+
+                            </button>
+                        </div>
+
+                        <div class="border-top pt-2 mt-2 collapse" id="collapseExample2">
+                            <p>
+                                Some placeholder content for the collapse component. This panel is hidden by
+                                default but
+                                revealed when the user activates the relevant trigger.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-10 col-md-5 timeLine-item">
+                    <div class="p-4 border border-3">
+                        <time class="mb-2 d-block">2023-04-05</time>
+                        <div class="d-flex align-items-start">
+                            <p class="me-3">健身房使用完畢的人，窗戶時常忘記關閉是否可以請警衛大哥幫忙巡視，或是貼張公告</p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample3">
+                                <span class="material-icons">
+                                    expand_more
+                                </span>
+
+                            </button>
+                        </div>
+
+                        <div class="border-top pt-2 mt-2 collapse" id="collapseExample3">
+                            <p>
+                                Some placeholder content for the collapse component. This panel is hidden by
+                                default but
+                                revealed when the user activates the relevant trigger.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-primary py-1 py-md-3 text-center">
+        <div class="container">
+            <p class="text-white">Copyright © 2023 by match / 素材取自網路，僅作個人作品使用</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./stylesheets/js/bootstrap.bundle.min.js"></script>
+    <script src="./stylesheets/js/comment.js"></script>
+    <script src="./stylesheets//js/commentuser.js"></script>
+</body>
+
+</html>

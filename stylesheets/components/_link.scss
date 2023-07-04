@@ -1,0 +1,13 @@
+.link-active {
+    transition: all 0.3s;
+
+    &:hover {
+        color: white !important;
+        background: $primary;
+    }
+
+    &:focus {
+        color: white !important;
+        background: $primary;
+    }
+}

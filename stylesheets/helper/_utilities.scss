@@ -1,0 +1,74 @@
+// stylelint-disable indentation
+
+// Utilities
+
+$utilities: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-merge(( // scss-docs-start utils-vertical-align
+        "height": (responsive: true,
+            property: height,
+            class: h,
+            values: (25: 25%,
+                50: 50%,
+                75: 75%,
+                100: 100%,
+                auto: auto)),
+        "width": (responsive: true, property: width,
+            class: w,
+            values: (25: 25%,
+                50: 50%,
+                75: 75%,
+                100: 100%,
+                auto: auto)),
+    ),
+    $utilities);
+
+@media (min-width:768px) {
+
+    @each $key,
+    $value in $font-md {
+        .fs-md-#{$key} {
+            font-size: $value !important;
+        }
+    }
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.gap-row-1 {
+    row-gap: 16px !important;
+}
+
+.gap-row-2 {
+    row-gap: 24px !important;
+}
+
+.gap-column-1 {
+    column-gap: 12px !important;
+}
+
+.gap-column-2 {
+    column-gap: 24px !important;
+}
+
+.text-nowrap {
+    white-space: nowrap
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.text-hidden {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

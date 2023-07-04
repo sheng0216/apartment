@@ -1,0 +1,38 @@
+.timeLine {
+    position: relative;
+
+    &-item::before {
+        content: '';
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        background: $primary;
+        border: 8px solid #CCCCCC;
+        left: 36px;
+        transform: translateX(-50%);
+        z-index: 100;
+        border-radius: 12px;
+    }
+
+
+    &-item:first-child::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 36px;
+        bottom: 0;
+        width: 1px;
+        background: $primary;
+    }
+
+    @media (min-width:768px) {
+        &-item::before {
+            left: 50%;
+        }
+
+        &-item:first-child::after {
+            left: 50%;
+        }
+
+    }
+}
